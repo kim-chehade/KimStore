@@ -1,0 +1,16 @@
+<div class="card mt-3 sm-4 p-3">
+  <div>
+    <img
+      src="/assets/images/{{ deviceItem.img }}"
+      class="img-fluid"
+      style="width: 400px; height: 200px"
+    />
+    <h1><a [routerLink]="['description', deviceItem.id]">{{ deviceItem.name }}</a></h1>
+    <p class="m-lg-2"><b>Description:</b> {{ deviceItem.description }}</p>
+    <p class="m-lg-2"><b>Quantity:</b> {{ deviceItem.quantity }} pieces</p>
+    <p class="m-lg-2"><b>Price:</b> {{ deviceItem.price }}$</p>
+
+
+
+  </div>
+</div>

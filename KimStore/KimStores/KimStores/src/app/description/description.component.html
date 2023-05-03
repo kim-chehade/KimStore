@@ -1,0 +1,29 @@
+<div *ngIf="device" class="d-flex ">
+
+  <div class="card img-fluid col-lg-6 ">
+    <img
+      src="/assets/images/{{ device.img }}"
+    />
+  </div>
+
+  <div class="card bg-black text-white col-lg-6 justify-content-center" style="float: right; ">
+    <h1 class="m-lg-3" style="font-size: 3.5rem">{{ device.name }}</h1>
+    <p class="m-lg-3" style="font-size: 1.5rem">
+      <b>Description:</b>
+      {{ device.description }}
+    </p>
+    <p class="m-lg-3" style="font-size: 1.5rem">
+      <b>Quantity:</b> {{ device.quantity }} pieces</p>
+    <p class="m-lg-3" style="font-size: 1.5rem">
+      <b>Price:</b> {{ device.price }}$</p>
+    <!--  <button (onAddtoCart)="showDeviceName($event)"></button>-->
+    <button
+      (click)="showDeviceName(device.name)"
+      class="btn btn-secondary p-3 m-lg-3"
+      style="width: 150px;"
+    >
+      Add to cart
+    </button>
+  </div>
+</div>
+

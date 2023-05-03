@@ -1,0 +1,27 @@
+::-webkit-input-placeholder {
+  color: black;
+}
+form {
+  margin: 50px 0 0 130px;
+  width: 400px;
+}
+button {
+  width: 400px;
+}
+
+#second #email{
+  border: 1px solid black;
+}
+label {
+  font-size: 15px;
+}
+
+#cardform #first h3 {
+  padding-top: 300px;
+}
+#cardform #first i {
+  font-size: 30px;
+}
+#cardform #second {
+  margin-top: 150px;
+}
